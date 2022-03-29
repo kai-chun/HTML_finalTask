@@ -15,6 +15,8 @@
 
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
 </head>
 <body>
     <div class="container">
@@ -39,37 +41,69 @@
                 </h1>
                 <ul>
                     <li><a href="#">首頁</a></li>
-                    <li><a href="#">產品介紹</a></li>
-                    <li><a href="#">聯絡我們</a></li>
+                    <li>
+                        <a class="dropClick" href="#">產品介紹</a>
+                        <ul class="dropdown">
+                            <li><a href="#">網頁設計</a></li>
+                            <li><a href="#">前端開發</a></li>
+                            <li><a href="#">後端開發</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="dropClick" href="#">關於我們</a>
+                        <ul class="dropdown">
+                            <li><a href="#">常見問答</a></li>
+                            <li><a href="#">特別方案</a></li>
+                            <li><a href="#">聯絡資訊</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </header>
         <div class="content">
             <section class="banner">
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img src="img/banner.png" alt="banner"></div>
+                        <div class="swiper-slide"><img src="img/bg_index.png" alt="bg_index"></div>
+                        <div class="swiper-slide"><img src="img/bg_QA.png" alt="bg_QA"></div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
                 <h2>六角學院<br>讓您奠定良好的前端基礎</h2>
             </section>
             <section>
                 <ul class="courseList">
                     <li class="courseItem">
-                        <img src="img/html.png" alt="HTML5">
-                        <h3>HTML 5 基礎教學</h3>
-                        <p>主流前端網站設計的基礎就在六角學院，在這裡不再是填鴨式教學，而是透過實際的範例，瞭解正確的網站開發流程，講師均具有業界開發經驗，讓學員學習業界主流的開發方法。</p>
+                        <a href="img/html.png" data-lightbox="card">
+                            <img src="img/html.png" alt="HTML5">
+                            <h3>HTML 5 基礎教學</h3>
+                            <p>主流前端網站設計的基礎就在六角學院，在這裡不再是填鴨式教學，而是透過實際的範例，瞭解正確的網站開發流程，講師均具有業界開發經驗，讓學員學習業界主流的開發方法。</p>
+                        </a>
                     </li>
                     <li class="courseItem">
-                        <img src="img/rwd.png" alt="rwd">
-                        <h3>響應式網站設計</h3>
-                        <p>響應式網站設計 (Resposive Web Design)，目前大多使用者均是以手機瀏覽的情況下，響應式網站已經是必備的。六角學院將會提供業界響應式開發方法，讓學生瞭解行動版開發技巧。</p>
+                        <a href="img/rwd.png" data-lightbox="card">
+                            <img src="img/rwd.png" alt="rwd">
+                            <h3>響應式網站設計</h3>
+                            <p>響應式網站設計 (Resposive Web Design)，目前大多使用者均是以手機瀏覽的情況下，響應式網站已經是必備的。六角學院將會提供業界響應式開發方法，讓學生瞭解行動版開發技巧。</p>
+                        </a>
                     </li>
                     <li class="courseItem">
-                        <img src="img/jQuery.png" alt="jQuery">
-                        <h3>jQuery 實戰教學</h3>
-                        <p>本課程有以下特色</p>
-                        <ul class="jQueryInfo">
-                            <li>瞭解變數的使用方法</li>
-                            <li>學習並操作 DOM</li>
-                            <li>學習基本數學運算方法</li>
-                            <li>套件的操作及運用</li>
-                        </ul>
+                        <a href="img/jQuery.png" data-lightbox="card">
+                            <img src="img/jQuery.png" alt="jQuery">
+                            <h3>jQuery 實戰教學</h3>
+                            <p>本課程有以下特色</p>
+                            <ul class="jQueryInfo">
+                                <li>瞭解變數的使用方法</li>
+                                <li>學習並操作 DOM</li>
+                                <li>學習基本數學運算方法</li>
+                                <li>套件的操作及運用</li>
+                            </ul>
+                        </a>
                     </li>
                 </ul>
             </section>
@@ -157,6 +191,11 @@
                 <li>電話：<a href="tel:+0999123456">0999123456</a></li>
             </ul>
         </footer>
+        <a class="top" href="#"><img src="img/up-arrow.png"></img></a>
     </div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/all.js"></script>
 </body>
 </html>
