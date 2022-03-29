@@ -1,3 +1,3 @@
 # HTML_finalTask
-HTML practice and jQuery  
+HTML and jQuery practice   
 https://kai-chun.github.io/HTML_finalTask/
