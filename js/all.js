@@ -1,3 +1,12 @@
+function showBtnCondition() {
+    if ($(this).scrollTop() > 600) {
+        $('.top').fadeIn();
+    } else {
+        $('.top').fadeOut();
+    }
+}
+$(window).scroll(showBtnCondition);
+
 $(document).ready(function(){
     // dropdown ul
     $('.dropClick').click(function(e){
